@@ -31,7 +31,7 @@ public class PartTimeJob extends Job {
     public String assessJobSatisfaction() {
         if (hoursPerWeek == 20 && hourlyWage >= 13) {
             return "Satisfied";
-        } else if (hoursPerWeek <= 20 && hourlyWage <= 13) {
+        } else if (hoursPerWeek <= 20 && hourlyWage >= 13) {
             return "Moderately satisfied";
         } else {
             return "Bad Business";
